@@ -1,3 +1,4 @@
+package jz;
 public  final class EvalOSUtil
 {
     private static String OS = null;

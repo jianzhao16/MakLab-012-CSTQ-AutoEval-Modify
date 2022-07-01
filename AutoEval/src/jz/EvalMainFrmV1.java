@@ -1,5 +1,8 @@
-import javax.swing.*;
-import java.awt.*;
+package jz;
+import jz.*;
+import java.awt.BorderLayout;
+import java.awt.FlowLayout;
+import java.awt.LayoutManager;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.*;
@@ -9,7 +12,11 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class EvalMainFrmV2 {
+import javax.swing.*;
+
+import static java.lang.Class.forName;
+
+public class EvalMainFrmV1 {
     // Global datasetNames List
     //public static ArrayList<String> datasetNamesList=new ArrayList<String>();
 
@@ -137,14 +144,7 @@ public class EvalMainFrmV2 {
 
         FileOutputStream outputStream= null;
         PrintStream outputPrintStream = null;
-
-        FileOutputStream outputStreamResult  = null;
-        PrintStream outputPrintStreamResult = null;
-
-        BufferedReader bufferedReader = null;
-        FileReader fileReader= null;
-
-        Runtime rt = Runtime.getRuntime();
+        EvalOSUtil eou= new EvalOSUtil();
         try {
             if (labelEvalSet == null || labelEvalSet.equals("") || labelDataSet ==null || labelDataSet.equals("")) {
                 String errorMsg = "Please Check Evaluation Software Path to Double Sure!";
@@ -171,12 +171,17 @@ public class EvalMainFrmV2 {
 
                 String splStrOS = "/";
 
+                //Save Evaluation Cmd Log
+                String evalCmdAfterRun=absPathEval+splStrOS+"evalCmdAfterRun.txt";
 
+                //Save Results
+                String evalCmdBeforeRun =absPathEval+splStrOS+"evalCmdBeforeRun.sh";
+                //String cmde =absPathEval+splStrOS+"evalCmdBeforeRun.sh";
                 
                 //[0] datasetName
                 //[1] eval
                 //[2] sequence
-                //[3] cmd has 6 parameter. e.g. 'DETMeasure datasetName 01 3 >> evalLogNames.txt'
+                //[3] cmd has 6 parameter. e.g. 'DETMeasure datasetName 01 3 >> evalCmdAfterRun.txt'
                 String[][][][] mycmd = new String[datasetNamesList.size()][3][2][6];
 
 
@@ -187,36 +192,19 @@ public class EvalMainFrmV2 {
 
 
                 //Generate run cmd
-/*                File myObj = new File(evalLogNames);
+/*                File myObj = new File(evalCmdAfterRun);
                 if (myObj.createNewFile()) {
                     System.out.println("eval log created: " + myObj.getName());
                 } else {
                     System.out.println("eval log already exists.");
                 }*/
 
+                 outputStream= new FileOutputStream(evalCmdBeforeRun);
+                 outputPrintStream = new PrintStream(outputStream);
 
-                int numCmdFiles=0;
-                // full ssh cmd to one string
-                String fullCmdtoStr="";
-                // result output content
-                String resultOutStr="";
                 for (int nameIdx = 0; nameIdx < datasetNamesList.size(); nameIdx++) {
                     for (int evalcmdIdx = 0; evalcmdIdx < 3; evalcmdIdx++){
                         for (int seqIdx = 0; seqIdx < 2; seqIdx++) {
-                            //count
-
-                            // Generate SH
-                            //String evalShNames =absPathEval+splStrOS+datasetNamesList.get(nameIdx).toString()+"evalSh.sh";
-                            String evalShNames =absPathEval+splStrOS+"Sh"+numCmdFiles+"-eval.sh";
-                            //Save Log
-                            String evalLogNames=absPathEval+splStrOS+"Log"+numCmdFiles+"-eval.txt";
-                            //Save Results
-                            String evaResultNames=absPathEval+splStrOS+"Result-eval.txt";
-
-                            outputStream= new FileOutputStream(evalShNames);
-                            outputPrintStream = new PrintStream(outputStream);
-
-
                             cmdTotlStr="";
                             //parameter 00
                             mycmd[nameIdx][evalcmdIdx][seqIdx][0] = absPathEval + splStrOS + evalcmd[evalcmdIdx];
@@ -234,14 +222,12 @@ public class EvalMainFrmV2 {
                             mycmd[nameIdx][evalcmdIdx][seqIdx][4] = ">>";
                             cmdTotlStr += mycmd[nameIdx][evalcmdIdx][seqIdx][4]+" ";
                             //parameter 05
-                            //mycmd[nameIdx][evalcmdIdx][seqIdx][5] = evalLogNames;
-                            mycmd[nameIdx][evalcmdIdx][seqIdx][5] = evalLogNames;
+                            mycmd[nameIdx][evalcmdIdx][seqIdx][5] = evalCmdAfterRun;
                             cmdTotlStr += mycmd[nameIdx][evalcmdIdx][seqIdx][5];
 
-                            //System.out.println(cmdTotlStr);
-
-                            fullCmdtoStr=fullCmdtoStr+cmdTotlStr+"\n";
-
+                            //proc = run.exec(mycmd[nameIdx][evalcmdIdx], null, new File(absPathEval));
+                            //cmdTotlStr = mycmd[nameIdx][0] + " " + mycmd[nameIdx][1] + " " + mycmd[nameIdx][2] + " " + mycmd[nameIdx][3];
+                            System.out.println(cmdTotlStr);
 
                             if(EvalOSUtil.isWindows()){
                                 outputPrintStream.print(cmdTotlStr+"\r\n");
@@ -249,76 +235,78 @@ public class EvalMainFrmV2 {
                             else{
                                 outputPrintStream.print(cmdTotlStr+"\n");
                             }
-                            // count ++
-                            numCmdFiles++;
+
                             /*
                             // Run Cmd
                             //
                              */
-                            //rt.freeMemory();
-                            //System.out.println(mycmd[nameIdx][evalcmdIdx][seqIdx].toString());
-                            //rt.exec(mycmd[nameIdx][evalcmdIdx][seqIdx]);
-                            //System.out.println(cmdTotlStr);
-                            //rt.exec(cmdTotlStr+"\n");
-                            String[] cmdChown={"chown", "777",evalShNames};
-                            //String[] cmdEvalRun={ "/bin/bash", evalShNames};
-                            String[] cmdEvalRun={ "sh", evalShNames};
 
 
-                            rt.freeMemory();
-                            //rt.exec(cmdTotlStr);
-                            rt.exec(cmdChown);
-                            rt.exec(cmdEvalRun);
-                            //rt.exit(0);
-
-                            /*
-                             * Post Data Processing
-                             * */
-                            // Read Evaluation Log Generate Result Data
-                            fileReader= new FileReader(evalLogNames);
-                            bufferedReader = new BufferedReader(fileReader);
-                            String lastLine = "";
-                            String currentLogLine="";
-                            //ArrayList<String> cmdlogList=new ArrayList<String>();
-                            while ((currentLogLine = bufferedReader.readLine()) != null) {
-                                //System.out.println(currentLogLine);
-                                //cmdlogList.add(currentLogLine);
-                                lastLine=currentLogLine.substring(0,21);
-                                System.out.println("last line is :"+lastLine);
-                            }
+                            //ProcessBuilder pb = new ProcessBuilder(cmdTotlStr);
+                            //String cmdTest="ls -a >> "+absPathEval+splStrOS+"abc.txt";
+//
+//                            ProcessBuilder pb = new ProcessBuilder(cmdTest);
+//                            Process p = pb.start();
+//                            int exitCode = p.waitFor();
 
 
+
+
+                            //Runtime.getRuntime().exec(cmdTest);
+                            // Runtime.getRuntime().exec(cmdTotlStr);
+
+                            //proc = run.exec(cmdTotlStr);
+                            //proc = run.exec(mycmd[nameIdx][evalcmdIdx][seqIdx], null, new File(absPathEval));
+
+
+//                            /*
+//                            * Post Data Processing
+//                            * */
+//                            // Read Evaluation Log
+//                            BufferedReader fileevalCmdAfterRunRead = new BufferedReader(new FileReader(evalCmdAfterRun));
+//                            String lastLine = "";
+//                            String currentLogLine="";
+//                            //ArrayList<String> cmdlogList=new ArrayList<String>();
+//                            while ((currentLogLine = fileevalCmdAfterRunRead.readLine()) != null) {
+//                                System.out.println(currentLogLine);
+//                                //cmdlogList.add(currentLogLine);
+//                                lastLine=currentLogLine;
+//                            }
+//
+//
+//                            fileevalCmdAfterRunRead.close();
+//
 //                            //Save Result File
-                            outputStreamResult=new FileOutputStream(evaResultNames);
-                            outputPrintStreamResult = new PrintStream(outputStreamResult);
-                            mycmd[nameIdx][evalcmdIdx][seqIdx][0] = evalcmd[evalcmdIdx];
-                            mycmd[nameIdx][evalcmdIdx][seqIdx][1] = datasetNamesList.get(nameIdx);
-                            for (int parameterIndx=0;parameterIndx<4;parameterIndx++)
-                            {
-                                System.out.print(mycmd[nameIdx][evalcmdIdx][seqIdx][parameterIndx]);
-                                resultOutStr+=mycmd[nameIdx][evalcmdIdx][seqIdx][parameterIndx];
-                                //if at end no comma printed
-                                System.out.print(",");
-                                //outputPrintStreamResult.print(",");
-                                resultOutStr+=",";
-
-                            }
-                            //FileUtils.writeStringToFile(fileSaveResult, "Hello File", forName("UTF-8"));
-                            System.out.print(lastLine);
-                            System.out.print("\n");
-                            //outputPrintStreamResult.print(lastLine);
-                            //outputPrintStreamResult.print("\n");
-                            resultOutStr+=lastLine;
-                            resultOutStr+="\n";
+//                            //PrintStream fileSaveResult = new PrintStream(new FileOutputStream(evalCmdBeforeRun));
+//                            mycmd[nameIdx][evalcmdIdx][seqIdx][0] = evalcmd[evalcmdIdx];
+//                            mycmd[nameIdx][evalcmdIdx][seqIdx][1] = datasetNamesList.get(nameIdx);
+//                            for (int parameterIndx=0;parameterIndx<4;parameterIndx++)
+//                            {
+//                                System.out.print(mycmd[nameIdx][evalcmdIdx][seqIdx][parameterIndx]);
+//                                //if at end no comma printed
+//                                System.out.print(",");
+//
+//                            }
+//                            //FileUtils.writeStringToFile(fileSaveResult, "Hello File", forName("UTF-8"));
+//                            System.out.print(lastLine);
+//                            System.out.println("");
 
                         }
                     }
                 }
-                System.out.println(cmdTotlStr);
 
-                //save all result data
-                outputPrintStreamResult.print(resultOutStr);
-                //extracted(datasetNamesList, evalcmd, evalLogNames, evalShNames, mycmd);
+                String[] cmdChown={"chown", "777",evalCmdBeforeRun};
+                //String[] cmdEvalRun={ "/bin/bash", evalCmdBeforeRun};
+                String[] cmdEvalRun={ "sh", evalCmdBeforeRun};
+
+                Runtime rt = Runtime.getRuntime();
+                rt.freeMemory();
+                //rt.exec(cmdTotlStr);
+                rt.exec(cmdChown);
+                rt.exec(cmdEvalRun);
+
+                //fileSaveResult.close();
+                //extracted(datasetNamesList, evalcmd, evalCmdAfterRun, evalCmdBeforeRun, mycmd);
             }
 
         } catch (Exception ex) {
@@ -331,34 +319,27 @@ public class EvalMainFrmV2 {
             if (outputStream != null) {
                 outputStream.close();
             }
-            if (bufferedReader != null) {
-                bufferedReader.close();
-            }
-            if (fileReader != null) {
-                fileReader.close();
-            }
-
         }
     }
 
-    private static void extracted(ArrayList<String> datasetNamesList, String[] evalcmd, String evalLogNames, String evalShNames, String[][][][] mycmd) throws IOException {
+    private static void extracted(ArrayList<String> datasetNamesList, String[] evalcmd, String evalCmdAfterRun, String evalCmdBeforeRun, String[][][][] mycmd) throws IOException {
     /*
     Post Processing Save Data
      */
         // Read Evaluation Log
-        BufferedReader fileevalLogNamesRead = new BufferedReader(new FileReader(evalLogNames));
+        BufferedReader fileevalCmdAfterRunRead = new BufferedReader(new FileReader(evalCmdAfterRun));
         String sCurrentLine;
         ArrayList<String> cmdlogList=new ArrayList<String>();
-        while ((sCurrentLine = fileevalLogNamesRead.readLine()) != null) {
+        while ((sCurrentLine = fileevalCmdAfterRunRead.readLine()) != null) {
                 System.out.println(sCurrentLine);
                 cmdlogList.add(sCurrentLine);
         }
         // Remove Eval Log
-        Path fileToDeletePath = Paths.get(evalLogNames);
+        Path fileToDeletePath = Paths.get(evalCmdAfterRun);
         Files.delete(fileToDeletePath);
 
         //Save Result File
-        PrintStream fileSaveResult = new PrintStream(new FileOutputStream(evalShNames));
+        PrintStream fileSaveResult = new PrintStream(new FileOutputStream(evalCmdBeforeRun));
 
         for (int nameIdx = 0; nameIdx < datasetNamesList.size(); nameIdx++)
         {
