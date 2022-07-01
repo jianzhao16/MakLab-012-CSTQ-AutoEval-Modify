@@ -1,20 +1,17 @@
 package jz;
-import jz.*;
+
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
 import java.awt.LayoutManager;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.*;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 
 import javax.swing.*;
 
-import static java.lang.Class.forName;
 
 public class EvalMainFrmV1 {
     // Global datasetNames List
@@ -126,7 +123,7 @@ public class EvalMainFrmV1 {
         });
     }
 
-    private static ArrayList fileNamePreProcessing(File file) {
+    private static ArrayList<String> fileNamePreProcessing(File file) {
         //get all datasetname
         ArrayList<String> datasetNamesList=new ArrayList<String>();
         file.list();
@@ -144,7 +141,7 @@ public class EvalMainFrmV1 {
 
         FileOutputStream outputStream= null;
         PrintStream outputPrintStream = null;
-        EvalOSUtil eou= new EvalOSUtil();
+     
         try {
             if (labelEvalSet == null || labelEvalSet.equals("") || labelDataSet ==null || labelDataSet.equals("")) {
                 String errorMsg = "Please Check Evaluation Software Path to Double Sure!";
@@ -187,8 +184,6 @@ public class EvalMainFrmV1 {
 
 
                 String cmdTotlStr= "";
-                Runtime run = Runtime.getRuntime();
-                Process proc ;
 
 
                 //Generate run cmd
@@ -322,48 +317,5 @@ public class EvalMainFrmV1 {
         }
     }
 
-    private static void extracted(ArrayList<String> datasetNamesList, String[] evalcmd, String evalCmdAfterRun, String evalCmdBeforeRun, String[][][][] mycmd) throws IOException {
-    /*
-    Post Processing Save Data
-     */
-        // Read Evaluation Log
-        BufferedReader fileevalCmdAfterRunRead = new BufferedReader(new FileReader(evalCmdAfterRun));
-        String sCurrentLine;
-        ArrayList<String> cmdlogList=new ArrayList<String>();
-        while ((sCurrentLine = fileevalCmdAfterRunRead.readLine()) != null) {
-                System.out.println(sCurrentLine);
-                cmdlogList.add(sCurrentLine);
-        }
-        // Remove Eval Log
-        Path fileToDeletePath = Paths.get(evalCmdAfterRun);
-        Files.delete(fileToDeletePath);
 
-        //Save Result File
-        PrintStream fileSaveResult = new PrintStream(new FileOutputStream(evalCmdBeforeRun));
-
-        for (int nameIdx = 0; nameIdx < datasetNamesList.size(); nameIdx++)
-        {
-            for (int evalcmdIdx = 0; evalcmdIdx < 3; evalcmdIdx++)
-            {
-                for (int seqIdx = 0; seqIdx < 2; seqIdx++)
-                {
-                    mycmd[nameIdx][evalcmdIdx][seqIdx][0] = evalcmd[evalcmdIdx];
-                    mycmd[nameIdx][evalcmdIdx][seqIdx][1] = datasetNamesList.get(nameIdx);
-                    for (int parameterIndx=0;parameterIndx<4;parameterIndx++)
-                    {
-                        System.out.print(mycmd[nameIdx][evalcmdIdx][seqIdx][parameterIndx]);
-                        //if at end no comma printed
-                        if(parameterIndx<3) {
-                            System.out.print(",");
-                        }
-
-                       //FileUtils.writeStringToFile(fileSaveResult, "Hello File", forName("UTF-8"));
-                        System.out.print(sCurrentLine);
-                    }
-                    System.out.println("");
-                }
-
-            }
-        }
-    }
 }
