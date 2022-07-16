@@ -224,7 +224,7 @@ public class EvalMainFrmV1 {
                             //cmdTotlStr = mycmd[nameIdx][0] + " " + mycmd[nameIdx][1] + " " + mycmd[nameIdx][2] + " " + mycmd[nameIdx][3];
                             System.out.println(cmdTotlStr);
 
-                            if(EvalOSUtil.isWindows()){
+                            if(EvalUtil.isWindows()){
                                 outputPrintStream.print(cmdTotlStr+"\r\n");
                             }
                             else{

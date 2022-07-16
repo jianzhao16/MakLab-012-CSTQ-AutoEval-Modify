@@ -176,7 +176,7 @@ public class EvalMainFrmV2 {
                 String[] sequence = {"01", "02"};
 
                 String splStrOS = "/";
-                if (EvalOSUtil.isWindows())
+                if (EvalUtil.isWindows())
                 {
                 	splStrOS="\\";
                 }
@@ -243,11 +243,11 @@ public class EvalMainFrmV2 {
                             fullCmdtoStr=fullCmdtoStr+cmdTotlStr+"\n";
 
 
-                            if(EvalOSUtil.isWindows()){
+                            if(EvalUtil.isWindows()){
                                 outputPrintStream.print(cmdTotlStr+"\r\n");
 
                             }
-                            else if (EvalOSUtil.isLinux()) {
+                            else if (EvalUtil.isLinux()) {
                                 outputPrintStream.print(cmdTotlStr+"\n");
                                 //Generate run cmd
                                 File myObj = new File(evalLogNames);

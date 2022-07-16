@@ -5,7 +5,7 @@ import java.io.File;
 /*
  * Check the OS is Win, Mac or Linux
  */
-public  final class EvalOSUtil
+public  final class EvalUtil
 {
     private static String OS = null;
     
@@ -44,7 +44,7 @@ public  final class EvalOSUtil
 	
 	//main
     public static void main(String args[]){
-        System.out.println(EvalOSUtil.getOsName());
-        System.out.println(EvalOSUtil.isMac());
+        System.out.println(EvalUtil.getOsName());
+        System.out.println(EvalUtil.isMac());
     }
 }

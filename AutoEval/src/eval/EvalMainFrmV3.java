@@ -31,7 +31,7 @@ public class EvalMainFrmV3 {
 		    	    	System.out.println("Cmd Mode, Please Input Eval Soft and  Data Directory");
 		    	    	myInput = new Scanner(System.in);
 		    	    	
-		    	    	//   runEvalCmd(myInput.nextLine().toString(),myInput.nextLine().toString());		    	    	
+		    	    	//runEvalCmd(myInput.nextLine().toString(),myInput.nextLine().toString());		    	    	
 		    	    	//   /Users/jian/Documents/GitHub/MakLab-012-CSTQ-AutoEval-Modify/AutoEval/src/eval/MacEval	   	    	   
 		    	    	//   /Users/jian/Downloads/1data-lab/new/0623-UVA-NL-Hero-Linux
 		    	    	
@@ -232,7 +232,7 @@ public class EvalMainFrmV3 {
                 String[] sequence = {"01", "02"};
 
                 String splStrOS = "/";
-                if (EvalOSUtil.isWindows())
+                if (EvalUtil.isWindows())
                 {
                 	splStrOS="\\";
                 }
@@ -277,7 +277,7 @@ public class EvalMainFrmV3 {
                             //Create Logs Dir
                             String LogsDir=absPathData+splStrOS+ft.format(mydate).substring(0,15)+"-logdir";
                             //Initial of log Dir
-                            EvalOSUtil.creatLogDir(LogsDir);
+                            EvalUtil.creatLogDir(LogsDir);
                             
                             evalShNames =LogsDir+splStrOS+ft.format(mydate)+"-Sh-"+numCmdFiles+"-eval.sh";
                             //Save Log
@@ -321,11 +321,11 @@ public class EvalMainFrmV3 {
                             fullCmdtoStr=fullCmdtoStr+cmdTotlStr+"\n";
 
 
-                            if(EvalOSUtil.isWindows()){
+                            if(EvalUtil.isWindows()){
                                 outputPrintStream.print(cmdTotlStr+"\r\n");
 
                             }
-                            else if (EvalOSUtil.isLinux()) {
+                            else if (EvalUtil.isLinux()) {
                                 outputPrintStream.print(cmdTotlStr+"\n");
                                 //Generate run cmd
                                 File myObj = new File(evalLogNames);
@@ -339,6 +339,7 @@ public class EvalMainFrmV3 {
                             else{
                             	//Mac
                                 outputPrintStream.print(cmdTotlStr+"\n");
+
                             }
                             
                             
