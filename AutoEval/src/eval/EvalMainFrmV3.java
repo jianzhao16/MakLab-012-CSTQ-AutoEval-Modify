@@ -31,11 +31,11 @@ public class EvalMainFrmV3 {
 		    	    	System.out.println("Cmd Mode, Please Input Eval Soft and  Data Directory");
 		    	    	myInput = new Scanner(System.in);
 		    	    	
-		    	    	//runEvalCmd(myInput.nextLine().toString(),myInput.nextLine().toString());		    	    	
+		    	    	runEvalCmd(myInput.nextLine().toString(),myInput.nextLine().toString());		    	    	
 		    	    	//   /Users/jian/Documents/GitHub/MakLab-012-CSTQ-AutoEval-Modify/AutoEval/src/eval/MacEval	   	    	   
 		    	    	//   /Users/jian/Downloads/1data-lab/new/0623-UVA-NL-Hero-Linux
 		    	    	
-		    	    	runEvalCmd("/Users/jian/Documents/GitHub/MakLab-012-CSTQ-AutoEval-Modify/AutoEval/src/eval/MacEval", "/Users/jian/Downloads/1data-lab/new/0623-UVA-NL-Hero-Linux");
+		    	    	//runEvalCmd("/Users/jian/Documents/GitHub/MakLab-012-CSTQ-AutoEval-Modify/AutoEval/src/eval/MacEval", "/Users/jian/Downloads/1data-lab/new/0623-UVA-NL-Hero-Linux");
 		    	        //exit
 		    	    	System.exit(0);
 		    	    case "2":
