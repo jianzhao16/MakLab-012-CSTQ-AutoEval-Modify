@@ -43,7 +43,7 @@ public class EvalMainFrmV3 {
 			    		System.out.println("Windows Mode:");
 			    		createWindow();
 			    		//exit
-			    		System.exit(0);
+			    		
 		    	    default:
 		    	    	System.out.println("Input Error");
 		    	    	
@@ -179,7 +179,7 @@ public class EvalMainFrmV3 {
         ArrayList<String> datasetNamesList=new ArrayList<String>();
         file.list();
         
-        
+        System.out.println("fileNamePreProcessed");
         //list only directory
         String[] directories = file.list(new FilenameFilter() {
         	  @Override
