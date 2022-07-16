@@ -18,8 +18,9 @@ public class EvalMainFrmV3 {
     public static void main(String[] args) {
     	Scanner myInput=null;
     	try {
-    		
-    		while(true) {
+    		//eroor sign, need to reinput 
+    		int errorSign=1;
+    		while(errorSign>0)  {
 	    		myInput = new Scanner(System.in);
 	    	    System.out.println("Please Enter 1 (cmd) or 2 (windows) mode) ");
 	    	    // String input
@@ -31,21 +32,33 @@ public class EvalMainFrmV3 {
 		    	    	System.out.println("Cmd Mode, Please Input Eval Soft and  Data Directory");
 		    	    	myInput = new Scanner(System.in);
 		    	    	//remove leading and trailing spacese
-		    	    	runEvalCmd(myInput.nextLine().trim(),myInput.nextLine().trim());		    	    	
+		    	    	//runEvalCmd(myInput.nextLine().trim(),myInput.nextLine().trim());		    	    	
+		    	    	
+		    	    	
+		    	    	//Win10
+		    	    	runEvalCmd("C:\\Users\\jacks\\Documents\\temp\\WinEval","C:\\Users\\jacks\\Documents\\New\\0627");
+		    	    	
+		    	    	//  C:\Users\jacks\Documents\temp\WinEval   	    	
+		    	    	//  C:\Users\jacks\Documents\New\0627
+		    	    	
+		    	    	
+		    	    	//Linux
 		    	    	//   /Users/jian/Documents/GitHub/MakLab-012-CSTQ-AutoEval-Modify/AutoEval/src/eval/MacEval	   	    	   
 		    	    	//   /Users/jian/Downloads/1data-lab/new/0623-UVA-NL-Hero-Linux
-		    	    	
 		    	    	//runEvalCmd("/Users/jian/Documents/GitHub/MakLab-012-CSTQ-AutoEval-Modify/AutoEval/src/eval/MacEval", "/Users/jian/Downloads/1data-lab/new/0623-UVA-NL-Hero-Linux");
 		    	        //exit
-		    	    	System.exit(0);
+		    	    	errorSign=0;
+		    	    	break;
 		    	    case "2":
 		    	    	// Windows Mode
 			    		System.out.println("Windows Mode:");
 			    		createWindow();
-			    		//exit
+			    		errorSign=0;
+			    		break;
 			    		
 		    	    default:
 		    	    	System.out.println("Input Error");
+		    	    
 		    	    	
 		    	}
     		}
@@ -311,7 +324,12 @@ public class EvalMainFrmV3 {
                             
 
                             //Save Sh cmd files
-                            evalShNames =LogsDir+splStrOS+ft.format(mydate)+"-Sh-"+numCmdFiles+"-eval.sh";
+                            if(EvalUtil.isWindows()){
+                            	evalShNames = LogsDir+splStrOS+ft.format(mydate)+"-Sh-"+numCmdFiles+"-eval.bat";
+                            }
+                            else {
+                            	evalShNames = LogsDir+splStrOS+ft.format(mydate)+"-Sh-"+numCmdFiles+"-eval.sh";
+                            }
                             //Save Log files
                             evalLogNames=LogsDir+splStrOS+ft.format(mydate)+"-logs-"+numCmdFiles+"-eval.txt";
 
@@ -381,17 +399,34 @@ public class EvalMainFrmV3 {
                             //
                              */
                             
-                            String[] cmdChown={"chown", "777",evalShNames};
-                            //String[] cmdEvalRun={ "/bin/bash", evalShNames};
-                            String[] cmdEvalRun={ "sh", evalShNames};
+                            
+
                             System.out.println("Creating Process...");                        
                             rt.freeMemory();        
-                            p1 = rt.exec(cmdChown);
-                            p2 = rt.exec(cmdEvalRun);
-                            //Wait Over
-                            System.out.println("Waiting over for the"+numCmdFiles+" sh running.");
-                            p1.waitFor();
-                            p2.waitFor();
+               
+                            // Linux or Windows need chown
+                            if(!EvalUtil.isWindows()) {
+                            	String[] cmdChown={"chown", "777",evalShNames};
+                            	p1 = rt.exec(cmdChown);
+                            	p1.waitFor();
+                            	
+                                //String[] cmdEvalRun={ "/bin/bash", evalShNames};
+                                String[] cmdEvalRun={ "sh", evalShNames};
+                                p2 = rt.exec(cmdEvalRun);
+                                //Wait Over
+                                System.out.println("Waiting over for the"+numCmdFiles+" sh running.");
+                                p2.waitFor();
+                            }
+                            else if(EvalUtil.isWindows()) {
+                                //if Win10
+                                String[] cmdEvalRun_Win={"cmd","/c",evalShNames};
+                                p2 = rt.exec(cmdEvalRun_Win);
+                                //Wait Over
+                                System.out.println("Waiting over for the"+numCmdFiles+" sh running.");
+                                p2.waitFor();
+                            }
+                            
+
 
                             
                             // count ++
