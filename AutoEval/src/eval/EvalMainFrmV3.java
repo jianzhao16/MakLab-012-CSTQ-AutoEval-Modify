@@ -31,7 +31,7 @@ public class EvalMainFrmV3 {
 		    	    	System.out.println("Cmd Mode, Please Input Eval Soft and  Data Directory");
 		    	    	myInput = new Scanner(System.in);
 		    	    	
-		    	    	runEvalCmd(myInput.nextLine().toString(),myInput.nextLine().toString());		    	    	
+		    	    	runEvalCmd(myInput.nextLine(),myInput.nextLine());		    	    	
 		    	    	//   /Users/jian/Documents/GitHub/MakLab-012-CSTQ-AutoEval-Modify/AutoEval/src/eval/MacEval	   	    	   
 		    	    	//   /Users/jian/Downloads/1data-lab/new/0623-UVA-NL-Hero-Linux
 		    	    	
@@ -174,7 +174,7 @@ public class EvalMainFrmV3 {
      * @param file
      * @return
      */
-    private static ArrayList<String> fileNamePreProcessing(File file) {
+    private static ArrayList<String> fileNamePreProcessed(File file) {
 
         ArrayList<String> datasetNamesList=new ArrayList<String>();
         file.list();
@@ -184,6 +184,7 @@ public class EvalMainFrmV3 {
         String[] directories = file.list(new FilenameFilter() {
         	  @Override
         	  public boolean accept(File current, String name) {
+        		  
         	    return new File(current, name).isDirectory();
         	  }
         	});
@@ -218,7 +219,7 @@ public class EvalMainFrmV3 {
                 //Creat File from Date Directory
                 ArrayList<String> datasetNamesList=new ArrayList<String>();
                 File fileDataDirector=new File(labelDataSet);
-                datasetNamesList=fileNamePreProcessing(fileDataDirector);
+                datasetNamesList=fileNamePreProcessed(fileDataDirector);
 
 
                 /*
