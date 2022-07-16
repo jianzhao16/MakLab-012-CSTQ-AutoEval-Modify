@@ -30,8 +30,8 @@ public class EvalMainFrmV3 {
 		    	    	// Cmd Mode
 		    	    	System.out.println("Cmd Mode, Please Input Eval Soft and  Data Directory");
 		    	    	myInput = new Scanner(System.in);
-		    	    	
-		    	    	runEvalCmd(myInput.nextLine(),myInput.nextLine());		    	    	
+		    	    	//remove leading and trailing spacese
+		    	    	runEvalCmd(myInput.nextLine().trim(),myInput.nextLine().trim());		    	    	
 		    	    	//   /Users/jian/Documents/GitHub/MakLab-012-CSTQ-AutoEval-Modify/AutoEval/src/eval/MacEval	   	    	   
 		    	    	//   /Users/jian/Downloads/1data-lab/new/0623-UVA-NL-Hero-Linux
 		    	    	
@@ -188,10 +188,22 @@ public class EvalMainFrmV3 {
         	    return new File(current, name).isDirectory();
         	  }
         	});
-        //print directory
-        System.out.println("Data Dirctory Includes : "+Arrays.toString(directories));
-        	  	
-        datasetNamesList= new ArrayList<>(Arrays.asList(directories));
+        //System.out.println("Data Dirctory Includes : "+Arrays.toString(directories));
+       
+    
+        // remove log and other directories
+        for(int listIndex=0;listIndex<directories.length;listIndex++) {
+        	if(!directories[listIndex].contains("logdir")) {
+        		datasetNamesList.add(directories[listIndex]);
+        	}
+        	
+        }
+        
+        //datasetNamesList= new ArrayList<>(Arrays.asList(directories));
+        
+   
+        System.out.println(Arrays.deepToString(datasetNamesList.toArray()));
+
        
         return datasetNamesList;
     }
@@ -263,29 +275,45 @@ public class EvalMainFrmV3 {
                 //Save Final Results name
                 String evaResultNames="";
                 
+                
+                // Get now time
+                Date mydate=new Date();
+                SimpleDateFormat ft = new SimpleDateFormat ("yyyy-MM-dd-hh-mm");
+                
+                
+                //Create Logs Dir ("yyyy-MM-dd-hh-mm")
+                //String LogsDir=absPathData+splStrOS+ft.format(mydate).substring(0,16)+"-logdir";
+                String LogsDir=absPathData+splStrOS+ft.format(mydate)+"-logdir";
+                //Initial of log Dir
+                EvalUtil.creatLogDir(LogsDir);
+                
+                //Save Results
+                evaResultNames=LogsDir+splStrOS+"Result-"+ft.format(mydate)+"-eval.csv";
+                
+                 
+                //cmd chown
+                Process p1 ;
+                //cmd run all sh files
+                Process p2 ;
+                //cmd: open result directory
+                Process p3 ;
+                
                 for (int nameIdx = 0; nameIdx < datasetNamesList.size(); nameIdx++) {
                     for (int evalcmdIdx = 0; evalcmdIdx < 3; evalcmdIdx++){
                         for (int seqIdx = 0; seqIdx < 2; seqIdx++) {                  
                             // Generate SH
                             //String evalShNames =absPathEval+splStrOS+datasetNamesList.get(nameIdx).toString()+"evalSh.sh";
-                        	Date mydate=new Date();
+                        	mydate=new Date();
                         	 
-                            SimpleDateFormat ft = new SimpleDateFormat ("yyyy-MM-dd-hh-mm");
+                            
 
-                            System.out.println("Current Date: " + ft.format(mydate));
+                            //System.out.println("Current Date: " + ft.format(mydate));
                             
-                            
-                            //Create Logs Dir
-                            String LogsDir=absPathData+splStrOS+ft.format(mydate).substring(0,15)+"-logdir";
-                            //Initial of log Dir
-                            EvalUtil.creatLogDir(LogsDir);
-                            
+
+                            //Save Sh cmd files
                             evalShNames =LogsDir+splStrOS+ft.format(mydate)+"-Sh-"+numCmdFiles+"-eval.sh";
-                            //Save Log
+                            //Save Log files
                             evalLogNames=LogsDir+splStrOS+ft.format(mydate)+"-logs-"+numCmdFiles+"-eval.txt";
-                            //Save Results
-                            evaResultNames=LogsDir+splStrOS+"Result-"+ft.format(mydate)+"-eval.txt";
-                            
 
                             	
                             outputStream= new FileOutputStream(evalShNames);
@@ -344,8 +372,7 @@ public class EvalMainFrmV3 {
                             }
                             
                             
-                            // count ++
-                            numCmdFiles++;
+
                             
                             
                             
@@ -359,15 +386,16 @@ public class EvalMainFrmV3 {
                             String[] cmdEvalRun={ "sh", evalShNames};
                             System.out.println("Creating Process...");                        
                             rt.freeMemory();        
-                            Process p1 = rt.exec(cmdChown);
-                            Process p2 = rt.exec(cmdEvalRun);
-                            // cause this process to stop until process p is terminated
+                            p1 = rt.exec(cmdChown);
+                            p2 = rt.exec(cmdEvalRun);
+                            //Wait Over
+                            System.out.println("Waiting over for the"+numCmdFiles+" sh running.");
                             p1.waitFor();
                             p2.waitFor();
-                            // when you manually close notepad.exe program will continue here
-                            System.out.println("Waiting over.");
-                            
 
+                            
+                            // count ++
+                            numCmdFiles++;
 
 
 
@@ -377,6 +405,7 @@ public class EvalMainFrmV3 {
                              * Post Data Processing
                              * */
                             // Read Evaluation Log Generate Result Data
+                            
                             fileReader= new FileReader(evalLogNames);
                             bufferedReader = new BufferedReader(fileReader);
                             String lastLine = "";
@@ -395,16 +424,14 @@ public class EvalMainFrmV3 {
                             outputPrintStreamResult = new PrintStream(outputStreamResult);
                             mycmd[nameIdx][evalcmdIdx][seqIdx][0] = evalcmd[evalcmdIdx];
                             mycmd[nameIdx][evalcmdIdx][seqIdx][1] = datasetNamesList.get(nameIdx);
-                            for (int parameterIndx=0;parameterIndx<4;parameterIndx++)
-                            {
-                                System.out.print(mycmd[nameIdx][evalcmdIdx][seqIdx][parameterIndx]);
-                                resultOutStr+=mycmd[nameIdx][evalcmdIdx][seqIdx][parameterIndx];
-                                //if at end no comma printed
-                                System.out.print(",");
-                                //outputPrintStreamResult.print(",");
-                                resultOutStr+=",";
+                            
+                            //save the first 4 column
+                            // col1: eval: DET, SEG, TRA
+                            // col2: datasetname=filename
+                            // col3: sequence: 01,02
+                            // col4: other parameter: default 3
+                        
 
-                            }
                             //FileUtils.writeStringToFile(fileSaveResult, "Hello File", forName("UTF-8"));
                             System.out.print(lastLine);
                             System.out.print("\n");
@@ -415,28 +442,58 @@ public class EvalMainFrmV3 {
                             // all log out
                             if(alloutput){
                                 resultOutStr+=lastLine;
+                                resultOutStr+="\n";
                             }
                             // only part  - good result message out
                             else {
                             	
                             	// find measure: 0.99998 ... save
-                            	int findIndex=lastLine.lastIndexOf("0.");
+                            	int findIndex=lastLine.lastIndexOf("measure");
                             
-                            	if(findIndex>=0 && lastLine.substring(findIndex,findIndex+2).equals("0.")){
-                            		System.out.println(lastLine.substring(findIndex,findIndex+2));
-                                    resultOutStr+=lastLine;
+                            	if(findIndex>=0 && lastLine.substring(findIndex,findIndex+11).equals("measure: 0.")){
+
+                                    
+                                    for (int parameterIndx=0;parameterIndx<4;parameterIndx++)
+                                    {
+                                        System.out.print(mycmd[nameIdx][evalcmdIdx][seqIdx][parameterIndx]);
+                                        resultOutStr+=mycmd[nameIdx][evalcmdIdx][seqIdx][parameterIndx];
+                                        //if at end no comma printed
+                                        System.out.print(",");
+                                        //outputPrintStreamResult.print(",");
+                                        resultOutStr+=",";
+
+                                    }
+                                    
+                            		//System.out.println(lastLine.substring(findIndex,findIndex+2));
+                                    findIndex=lastLine.lastIndexOf("0.");
+                                    //Get the last 8 number is the result
+                                    resultOutStr+=lastLine.substring(findIndex,findIndex+8);
+                                    resultOutStr+="\n";
                             	}
+                            	
                             	
                             }
                             
-                            resultOutStr+="\n";
+
+                            
+                         
 
                         }
                     }
                 }
                 System.out.println(cmdTotlStr);
 
+                System.out.println("All sh run finished. Save Result");
                 outputPrintStreamResult.print(resultOutStr);
+                
+                System.out.println("Save Result done");
+                
+                
+                //String[] cdCmd={"cd",LogsDir};
+                //p3 = rt.exec(cdCmd);
+                //Wait Over
+                System.out.println("All Done. Enjoy.");
+                
                
             
             }
