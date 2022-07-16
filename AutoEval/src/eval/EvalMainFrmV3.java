@@ -284,7 +284,7 @@ public class EvalMainFrmV3 {
                             //Save Log
                             evalLogNames=LogsDir+splStrOS+ft.format(mydate)+"-logs-"+numCmdFiles+"-eval.txt";
                             //Save Results
-                            evaResultNames=LogsDir+splStrOS+ft.format(mydate)+"-Result"+"-eval.txt";
+                            evaResultNames=LogsDir+splStrOS+"Result-"+ft.format(mydate)+"-eval.txt";
                             
 
                             	
