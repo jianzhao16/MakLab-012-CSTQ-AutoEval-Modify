@@ -29,27 +29,34 @@ public class EvalMainFrmV3 {
 	    	    switch(mode) {
 		    	    case "1":
 		    	    	// Cmd Mode
-		    	    	System.out.println("Cmd Mode, Please Input Eval Soft and  Data Directory");
+		    	    	System.out.println("Cmd Mode, Run by Default Parameters");
 		    	    	myInput = new Scanner(System.in);
-		    	    	//remove leading and trailing spacese
-		    	    	//runEvalCmd(myInput.nextLine().trim(),myInput.nextLine().trim());		    	    	
-		    	    	
-		    	    	
+
 		    	    	//Win10
-		    	    	runEvalCmd("C:\\Users\\jacks\\Documents\\temp\\WinEval","C:\\Users\\jacks\\Documents\\New\\0627");
+		                if (EvalUtil.isWindows())
+		                {
+			    	    	//  C:\Users\jacks\Documents\temp\WinEval   	    	
+			    	    	//  C:\Users\jacks\Documents\New\0627
+		                	
+		                	runEvalCmd("C:\\Users\\jacks\\Documents\\temp\\WinEval","C:\\Users\\jacks\\Documents\\New\\0627");
+		                }
+		                else if(EvalUtil.isMac())
+		                {
 		    	    	
-		    	    	//  C:\Users\jacks\Documents\temp\WinEval   	    	
-		    	    	//  C:\Users\jacks\Documents\New\0627
-		    	    	
-		    	    	
-		    	    	//Linux
-		    	    	//   /Users/jian/Documents/GitHub/MakLab-012-CSTQ-AutoEval-Modify/AutoEval/src/eval/MacEval	   	    	   
-		    	    	//   /Users/jian/Downloads/1data-lab/new/0623-UVA-NL-Hero-Linux
-		    	    	//runEvalCmd("/Users/jian/Documents/GitHub/MakLab-012-CSTQ-AutoEval-Modify/AutoEval/src/eval/MacEval", "/Users/jian/Downloads/1data-lab/new/0623-UVA-NL-Hero-Linux");
-		    	        //exit
+		                	//   /Users/jian/Documents/GitHub/MakLab-012-CSTQ-AutoEval-Modify/AutoEval/src/eval/MacEval	   	    	   
+		                	//   /Users/jian/Downloads/1data-lab/new/0623-UVA-NL-Hero-Linux
+		                	runEvalCmd("/Users/jian/Documents/GitHub/MakLab-012-CSTQ-AutoEval-Modify/AutoEval/src/eval/MacEval", "/Users/jian/Downloads/1data-lab/new/0623-UVA-NL-Hero-Linux");
+		    	        
+		                }
+		                
 		    	    	errorSign=0;
 		    	    	break;
 		    	    case "2":
+		    	    	System.out.println("Cmd Mode, Please Input Eval Soft and  Data Directory");
+		    	    	runEvalCmd(myInput.nextLine().trim(),myInput.nextLine().trim());	
+		    	    	errorSign=0;
+		    	    	break;
+		    	    case "3":
 		    	    	// Windows Mode
 			    		System.out.println("Windows Mode:");
 			    		createWindow();
@@ -57,7 +64,9 @@ public class EvalMainFrmV3 {
 			    		break;
 			    		
 		    	    default:
+		    	    	errorSign=1;
 		    	    	System.out.println("Input Error");
+		    	    	
 		    	    
 		    	    	
 		    	}
@@ -228,6 +237,9 @@ public class EvalMainFrmV3 {
 
         FileOutputStream outputStreamResult  = null;
         PrintStream outputPrintStreamResult = null;
+        
+        FileOutputStream outputStreamFullResult  = null;
+        PrintStream outputPrintStreamFullResult = null;
 
         BufferedReader bufferedReader = null;
         FileReader fileReader= null;
@@ -278,6 +290,8 @@ public class EvalMainFrmV3 {
                 String fullCmdtoStr="";
                 // result output content
                 String resultOutStr="";
+                // result output full content
+                String resultFullOutStr="";
                 //save all result data
                 boolean alloutput=false;
                 
@@ -287,7 +301,8 @@ public class EvalMainFrmV3 {
                 String evalLogNames="";
                 //Save Final Results name
                 String evaResultNames="";
-                
+                //Save Final Results name
+                String evaFullResultNames="";
                 
                 // Get now time
                 Date mydate=new Date();
@@ -302,7 +317,8 @@ public class EvalMainFrmV3 {
                 
                 //Save Results
                 evaResultNames=LogsDir+splStrOS+"Result-"+ft.format(mydate)+"-eval.csv";
-                
+                //Save Results
+                evaFullResultNames=LogsDir+splStrOS+"Result-"+ft.format(mydate)+"-eval-full.csv";
                  
                 //cmd chown
                 Process p1 ;
@@ -389,9 +405,7 @@ public class EvalMainFrmV3 {
 
                             }
                             
-                            
-
-                            
+                                                     
                             
                             
                             /*
@@ -454,9 +468,14 @@ public class EvalMainFrmV3 {
                             }
 
 
-//                            //Save Result File
+                            //Save Result File
                             outputStreamResult=new FileOutputStream(evaResultNames);
                             outputPrintStreamResult = new PrintStream(outputStreamResult);
+                            
+                            //Save Full Result File
+                            outputStreamFullResult=new FileOutputStream(evaFullResultNames);
+                            outputPrintStreamFullResult = new PrintStream(outputStreamFullResult);
+                          
                             mycmd[nameIdx][evalcmdIdx][seqIdx][0] = evalcmd[evalcmdIdx];
                             mycmd[nameIdx][evalcmdIdx][seqIdx][1] = datasetNamesList.get(nameIdx);
                             
@@ -475,36 +494,15 @@ public class EvalMainFrmV3 {
                             
                             
                             // all log out
-                            if(alloutput){
-                                resultOutStr+=lastLine;
-                                resultOutStr+="\n";
+                            {
+                            	resultFullOutStr = outFullParameters(mycmd, resultFullOutStr, nameIdx, evalcmdIdx, seqIdx,
+										lastLine);
                             }
                             // only part  - good result message out
-                            else {
+                            {
                             	
-                            	// find measure: 0.99998 ... save
-                            	int findIndex=lastLine.lastIndexOf("measure");
-                            
-                            	if(findIndex>=0 && lastLine.substring(findIndex,findIndex+11).equals("measure: 0.")){
-
-                                    
-                                    for (int parameterIndx=0;parameterIndx<4;parameterIndx++)
-                                    {
-                                        System.out.print(mycmd[nameIdx][evalcmdIdx][seqIdx][parameterIndx]);
-                                        resultOutStr+=mycmd[nameIdx][evalcmdIdx][seqIdx][parameterIndx];
-                                        //if at end no comma printed
-                                        System.out.print(",");
-                                        //outputPrintStreamResult.print(",");
-                                        resultOutStr+=",";
-
-                                    }
-                                    
-                            		//System.out.println(lastLine.substring(findIndex,findIndex+2));
-                                    findIndex=lastLine.lastIndexOf("0.");
-                                    //Get the last 8 number is the result
-                                    resultOutStr+=lastLine.substring(findIndex,findIndex+8);
-                                    resultOutStr+="\n";
-                            	}
+                            	resultOutStr = outPartParameters(mycmd, resultOutStr, nameIdx, evalcmdIdx, seqIdx,
+										lastLine);
                             	
                             	
                             }
@@ -516,11 +514,13 @@ public class EvalMainFrmV3 {
                         }
                     }
                 }
-                System.out.println(cmdTotlStr);
+                //System.out.println(cmdTotlStr);
 
                 System.out.println("All sh run finished. Save Result");
+                //save part of results
                 outputPrintStreamResult.print(resultOutStr);
-                
+                //save full results
+                outputPrintStreamFullResult.print(resultFullOutStr);
                 System.out.println("Save Result done");
                 
                 
@@ -537,6 +537,18 @@ public class EvalMainFrmV3 {
             System.out.println(ex.toString());
         }
         finally {
+            if (outputPrintStreamFullResult != null) {
+                outputPrintStreamFullResult.close();
+            }
+            if (outputStreamFullResult != null) {
+                outputStreamFullResult.close();
+            }
+            if (outputPrintStreamResult != null) {
+                outputPrintStreamResult.close();
+            }
+            if (outputStreamResult != null) {
+            	outputStreamResult.close();
+            }
             if (outputPrintStream != null) {
                 outputPrintStream.close();
             }
@@ -552,6 +564,57 @@ public class EvalMainFrmV3 {
 
         }
     }
+
+    
+	private static String outFullParameters(String[][][][] mycmd, String resultFullOutStrSet, int nameIdx, int evalcmdIdx,
+			int seqIdx, String lastLine) {
+			// output the fisrt 4 parameters
+		    for (int parameterIndx=0;parameterIndx<4;parameterIndx++)
+		    {
+		        System.out.print(mycmd[nameIdx][evalcmdIdx][seqIdx][parameterIndx]);
+		        resultFullOutStrSet+=mycmd[nameIdx][evalcmdIdx][seqIdx][parameterIndx];
+		        //if at end no comma printed
+		        System.out.print(",");
+		        //outputPrintStreamResult.print(",");
+		        resultFullOutStrSet+=",";
+
+		    }
+		    
+		    // output the last messages
+		    resultFullOutStrSet+=lastLine;
+		    resultFullOutStrSet+="\n";
+		
+		return resultFullOutStrSet;
+	}
+	
+
+	private static String outPartParameters(String[][][][] mycmd, String resultOutStr, int nameIdx, int evalcmdIdx,
+			int seqIdx, String lastLine) {
+		// find measure: 0.99998 ... save
+		int findIndex=lastLine.lastIndexOf("measure");
+                     
+		if(findIndex>=0 && lastLine.substring(findIndex,findIndex+11).equals("measure: 0.")){
+
+		    
+		    for (int parameterIndx=0;parameterIndx<4;parameterIndx++)
+		    {
+		        System.out.print(mycmd[nameIdx][evalcmdIdx][seqIdx][parameterIndx]);
+		        resultOutStr+=mycmd[nameIdx][evalcmdIdx][seqIdx][parameterIndx];
+		        //if at end no comma printed
+		        System.out.print(",");
+		        //outputPrintStreamResult.print(",");
+		        resultOutStr+=",";
+
+		    }
+		    
+			//System.out.println(lastLine.substring(findIndex,findIndex+2));
+		    findIndex=lastLine.lastIndexOf("0.");
+		    //Get the last 8 number is the result
+		    resultOutStr+=lastLine.substring(findIndex,findIndex+8);
+		    resultOutStr+="\n";
+		}
+		return resultOutStr;
+	}
 
 
 
