@@ -45,8 +45,10 @@ public class EvalMainFrmV3 {
 		    	    	
 		                	//   /Users/jian/Documents/GitHub/MakLab-012-CSTQ-AutoEval-Modify/AutoEval/src/eval/MacEval	   	    	   
 		                	//   /Users/jian/Downloads/1data-lab/new/0623-UVA-NL-Hero-Linux
+		                	
+		                	//runEvalCmd("/Users/jian/Documents/GitHub/MakLab-012-CSTQ-AutoEval-Modify/AutoEval/src/eval/MacEval", "/Users/jian/Downloads/1data-lab/new/0623-UVA-NL-Hero-Linux");
 		                	runEvalCmd("/Users/jian/Documents/GitHub/MakLab-012-CSTQ-AutoEval-Modify/AutoEval/src/eval/MacEval", "/Users/jian/Downloads/1data-lab/new/0623-UVA-NL-Hero-Linux");
-		    	        
+
 		                }
 		                
 		    	    	errorSign=0;
