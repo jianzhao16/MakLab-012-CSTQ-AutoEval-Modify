@@ -1,0 +1,698 @@
+Please Enter 1 (cmd) or 2 (windows) mode) 
+Cmd Mode, Run by Default Parameters
+fileNamePreProcessed
+[Fluo-C2DL-Huh7, Fluo-C2DL-MSC]
+Directory C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\2022-07-26-20-48-logdir has been created.mkdir : [Ljava.lang.String;@17550481 is done
+Waiting over for the copy Parameter.
+Creating Process...
+Waiting over for the0 sh running.
+last line is :i3d::IOException: I3D::ImageReader: file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' not found or cannot be read.
+last line is :The image 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' cannot be opened!
+The image 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' cannot be opened!
+DETMeasure,Fluo-C2DL-Huh7,01,3,Creating Process...
+Waiting over for the1 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+DETMeasure,Fluo-C2DL-Huh7,02,3,Creating Process...
+Waiting over for the2 sh running.
+last line is :i3d::IOException: I3D::ImageReader: file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' not found or cannot be read.
+last line is :The image 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' cannot be opened!
+The image 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' cannot be opened!
+SEGMeasure,Fluo-C2DL-Huh7,01,3,Creating Process...
+Waiting over for the3 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+SEGMeasure,Fluo-C2DL-Huh7,02,3,Creating Process...
+Waiting over for the4 sh running.
+last line is :The track file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/res_track.txt' cannot be opened!
+The track file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/res_track.txt' cannot be opened!
+TRAMeasure,Fluo-C2DL-Huh7,01,3,Creating Process...
+Waiting over for the5 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+TRAMeasure,Fluo-C2DL-Huh7,02,3,mkdir : [Ljava.lang.String;@1324409e is done
+Waiting over for the copy Parameter.
+Creating Process...
+Waiting over for the6 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+DETMeasure,Fluo-C2DL-MSC,01,3,Creating Process...
+Waiting over for the7 sh running.
+last line is :DET measure: 0.693085
+DET measure: 0.693085
+DETMeasure,Fluo-C2DL-MSC,02,3,DETMeasure,Fluo-C2DL-MSC,02,3,Creating Process...
+Waiting over for the8 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+SEGMeasure,Fluo-C2DL-MSC,01,3,Creating Process...
+Waiting over for the9 sh running.
+last line is :SEG measure: 0.660173
+SEG measure: 0.660173
+SEGMeasure,Fluo-C2DL-MSC,02,3,SEGMeasure,Fluo-C2DL-MSC,02,3,Creating Process...
+Waiting over for the10 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+TRAMeasure,Fluo-C2DL-MSC,01,3,Creating Process...
+Waiting over for the11 sh running.
+last line is :TRA measure: 0.685142
+TRA measure: 0.685142
+TRAMeasure,Fluo-C2DL-MSC,02,3,TRAMeasure,Fluo-C2DL-MSC,02,3,All sh run finished. Save Result
+Save Result done
+All Done. Enjoy.
+Please Enter 1 (cmd) or 2 (windows) mode) 
+Cmd Mode, Run by Default Parameters
+fileNamePreProcessed
+[Fluo-C2DL-Huh7, Fluo-C2DL-MSC]
+Directory C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\2022-07-26-20-50-logdir has been created.mkdir : [Ljava.lang.String;@17550481 is done
+Waiting over for the copy Parameter.
+Creating Process...
+Waiting over for the0 sh running.
+last line is :i3d::IOException: I3D::ImageReader: file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' not found or cannot be read.
+last line is :The image 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' cannot be opened!
+The image 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' cannot be opened!
+DETMeasure,Fluo-C2DL-Huh7,01,3,Creating Process...
+Waiting over for the1 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+DETMeasure,Fluo-C2DL-Huh7,02,3,Creating Process...
+Waiting over for the2 sh running.
+last line is :i3d::IOException: I3D::ImageReader: file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' not found or cannot be read.
+last line is :The image 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' cannot be opened!
+The image 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' cannot be opened!
+SEGMeasure,Fluo-C2DL-Huh7,01,3,Creating Process...
+Waiting over for the3 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+SEGMeasure,Fluo-C2DL-Huh7,02,3,Creating Process...
+Waiting over for the4 sh running.
+last line is :The track file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/res_track.txt' cannot be opened!
+The track file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/res_track.txt' cannot be opened!
+TRAMeasure,Fluo-C2DL-Huh7,01,3,Creating Process...
+Waiting over for the5 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+TRAMeasure,Fluo-C2DL-Huh7,02,3,mkdir : [Ljava.lang.String;@1324409e is done
+Waiting over for the copy Parameter.
+Creating Process...
+Waiting over for the6 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+DETMeasure,Fluo-C2DL-MSC,01,3,Creating Process...
+Waiting over for the7 sh running.
+last line is :DET measure: 0.693085
+DET measure: 0.693085
+DETMeasure,Fluo-C2DL-MSC,02,3,DETMeasure,Fluo-C2DL-MSC,02,3,Creating Process...
+Waiting over for the8 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+SEGMeasure,Fluo-C2DL-MSC,01,3,Creating Process...
+Waiting over for the9 sh running.
+last line is :SEG measure: 0.660173
+SEG measure: 0.660173
+SEGMeasure,Fluo-C2DL-MSC,02,3,SEGMeasure,Fluo-C2DL-MSC,02,3,Creating Process...
+Waiting over for the10 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+TRAMeasure,Fluo-C2DL-MSC,01,3,Creating Process...
+Waiting over for the11 sh running.
+last line is :TRA measure: 0.685142
+TRA measure: 0.685142
+TRAMeasure,Fluo-C2DL-MSC,02,3,TRAMeasure,Fluo-C2DL-MSC,02,3,All sh run finished. Save Result
+Save Result done
+All Done. Enjoy.
+Please Enter 1 (cmd) or 2 (windows) mode) 
+Cmd Mode, Run by Default Parameters
+fileNamePreProcessed
+[Fluo-C2DL-Huh7, Fluo-C2DL-MSC]
+Directory C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\2022-07-26-20-50-logdir has already been created.mkdir : [Ljava.lang.String;@17550481 is done
+Waiting over for the copy Parameter.
+Creating Process...
+Waiting over for the0 sh running.
+last line is :i3d::IOException: I3D::ImageReader: file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' not found or cannot be read.
+last line is :The image 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' cannot be opened!
+last line is :i3d::IOException: I3D::ImageReader: file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' not found or cannot be read.
+last line is :The image 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' cannot be opened!
+The image 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' cannot be opened!
+DETMeasure,Fluo-C2DL-Huh7,01,3,Creating Process...
+Waiting over for the1 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+DETMeasure,Fluo-C2DL-Huh7,02,3,Creating Process...
+Waiting over for the2 sh running.
+last line is :i3d::IOException: I3D::ImageReader: file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' not found or cannot be read.
+last line is :The image 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' cannot be opened!
+last line is :i3d::IOException: I3D::ImageReader: file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' not found or cannot be read.
+last line is :The image 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' cannot be opened!
+The image 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' cannot be opened!
+SEGMeasure,Fluo-C2DL-Huh7,01,3,Creating Process...
+Waiting over for the3 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+SEGMeasure,Fluo-C2DL-Huh7,02,3,Creating Process...
+Waiting over for the4 sh running.
+last line is :The track file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/res_track.txt' cannot be opened!
+last line is :The track file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/res_track.txt' cannot be opened!
+The track file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/res_track.txt' cannot be opened!
+TRAMeasure,Fluo-C2DL-Huh7,01,3,Creating Process...
+Waiting over for the5 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+TRAMeasure,Fluo-C2DL-Huh7,02,3,mkdir : [Ljava.lang.String;@1324409e is done
+Waiting over for the copy Parameter.
+Creating Process...
+Waiting over for the6 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+DETMeasure,Fluo-C2DL-MSC,01,3,Creating Process...
+Waiting over for the7 sh running.
+last line is :DET measure: 0.693085
+last line is :DET measure: 0.693085
+DET measure: 0.693085
+DETMeasure,Fluo-C2DL-MSC,02,3,DETMeasure,Fluo-C2DL-MSC,02,3,Creating Process...
+Waiting over for the8 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+SEGMeasure,Fluo-C2DL-MSC,01,3,Creating Process...
+Waiting over for the9 sh running.
+last line is :SEG measure: 0.660173
+last line is :SEG measure: 0.660173
+SEG measure: 0.660173
+SEGMeasure,Fluo-C2DL-MSC,02,3,SEGMeasure,Fluo-C2DL-MSC,02,3,Creating Process...
+Waiting over for the10 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+TRAMeasure,Fluo-C2DL-MSC,01,3,Creating Process...
+Waiting over for the11 sh running.
+last line is :TRA measure: 0.685142
+last line is :TRA measure: 0.685142
+TRA measure: 0.685142
+TRAMeasure,Fluo-C2DL-MSC,02,3,TRAMeasure,Fluo-C2DL-MSC,02,3,All sh run finished. Save Result
+Save Result done
+All Done. Enjoy.
+Please Enter 1 (cmd) or 2 (windows) mode) 
+Cmd Mode, Run by Default Parameters
+fileNamePreProcessed
+[Fluo-C2DL-Huh7, Fluo-C2DL-MSC]
+Directory C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\2022-07-26-20-51-logdir has been created.mkdir : [Ljava.lang.String;@17550481 is done
+Waiting over for the copy Parameter.
+Creating Process...
+Waiting over for the0 sh running.
+last line is :i3d::IOException: I3D::ImageReader: file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' not found or cannot be read.
+last line is :The image 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' cannot be opened!
+The image 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' cannot be opened!
+DETMeasure,Fluo-C2DL-Huh7,01,3,Creating Process...
+Waiting over for the1 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+DETMeasure,Fluo-C2DL-Huh7,02,3,Creating Process...
+Waiting over for the2 sh running.
+last line is :i3d::IOException: I3D::ImageReader: file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' not found or cannot be read.
+last line is :The image 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' cannot be opened!
+The image 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' cannot be opened!
+SEGMeasure,Fluo-C2DL-Huh7,01,3,Creating Process...
+Waiting over for the3 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+SEGMeasure,Fluo-C2DL-Huh7,02,3,Creating Process...
+Waiting over for the4 sh running.
+last line is :The track file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/res_track.txt' cannot be opened!
+The track file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/res_track.txt' cannot be opened!
+TRAMeasure,Fluo-C2DL-Huh7,01,3,Creating Process...
+Waiting over for the5 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+TRAMeasure,Fluo-C2DL-Huh7,02,3,mkdir : [Ljava.lang.String;@1324409e is done
+Waiting over for the copy Parameter.
+Creating Process...
+Waiting over for the6 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+DETMeasure,Fluo-C2DL-MSC,01,3,Creating Process...
+Waiting over for the7 sh running.
+last line is :DET measure: 0.693085
+DET measure: 0.693085
+DETMeasure,Fluo-C2DL-MSC,02,3,DETMeasure,Fluo-C2DL-MSC,02,3,Creating Process...
+Waiting over for the8 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+SEGMeasure,Fluo-C2DL-MSC,01,3,Creating Process...
+Waiting over for the9 sh running.
+last line is :SEG measure: 0.660173
+SEG measure: 0.660173
+SEGMeasure,Fluo-C2DL-MSC,02,3,SEGMeasure,Fluo-C2DL-MSC,02,3,Creating Process...
+Waiting over for the10 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+TRAMeasure,Fluo-C2DL-MSC,01,3,Creating Process...
+Waiting over for the11 sh running.
+last line is :TRA measure: 0.685142
+TRA measure: 0.685142
+TRAMeasure,Fluo-C2DL-MSC,02,3,TRAMeasure,Fluo-C2DL-MSC,02,3,All sh run finished. Save Result
+Save Result done
+All Done. Enjoy.
+Please Enter 1 (cmd) or 2 (windows) mode) 
+Cmd Mode, Run by Default Parameters
+fileNamePreProcessed
+[Fluo-C2DL-Huh7, Fluo-C2DL-MSC]
+Directory C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\2022-07-26-20-51-logdir has already been created.mkdir : [Ljava.lang.String;@17550481 is done
+Waiting over for the copy Parameter.
+Creating Process...
+Waiting over for the0 sh running.
+last line is :i3d::IOException: I3D::ImageReader: file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' not found or cannot be read.
+last line is :The image 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' cannot be opened!
+last line is :i3d::IOException: I3D::ImageReader: file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' not found or cannot be read.
+last line is :The image 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' cannot be opened!
+The image 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' cannot be opened!
+DETMeasure,Fluo-C2DL-Huh7,01,3,Creating Process...
+Waiting over for the1 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+DETMeasure,Fluo-C2DL-Huh7,02,3,Creating Process...
+Waiting over for the2 sh running.
+last line is :i3d::IOException: I3D::ImageReader: file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' not found or cannot be read.
+last line is :The image 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' cannot be opened!
+last line is :i3d::IOException: I3D::ImageReader: file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' not found or cannot be read.
+last line is :The image 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' cannot be opened!
+The image 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' cannot be opened!
+SEGMeasure,Fluo-C2DL-Huh7,01,3,Creating Process...
+Waiting over for the3 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+SEGMeasure,Fluo-C2DL-Huh7,02,3,Creating Process...
+Waiting over for the4 sh running.
+last line is :The track file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/res_track.txt' cannot be opened!
+last line is :The track file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/res_track.txt' cannot be opened!
+The track file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/res_track.txt' cannot be opened!
+TRAMeasure,Fluo-C2DL-Huh7,01,3,Creating Process...
+Waiting over for the5 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+TRAMeasure,Fluo-C2DL-Huh7,02,3,mkdir : [Ljava.lang.String;@1324409e is done
+Waiting over for the copy Parameter.
+Creating Process...
+Waiting over for the6 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+DETMeasure,Fluo-C2DL-MSC,01,3,Creating Process...
+Waiting over for the7 sh running.
+last line is :DET measure: 0.693085
+DET measure: 0.693085
+DETMeasure,Fluo-C2DL-MSC,02,3,DETMeasure,Fluo-C2DL-MSC,02,3,Creating Process...
+Waiting over for the8 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+SEGMeasure,Fluo-C2DL-MSC,01,3,Creating Process...
+Waiting over for the9 sh running.
+last line is :SEG measure: 0.660173
+SEG measure: 0.660173
+SEGMeasure,Fluo-C2DL-MSC,02,3,SEGMeasure,Fluo-C2DL-MSC,02,3,Creating Process...
+Waiting over for the10 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+TRAMeasure,Fluo-C2DL-MSC,01,3,Creating Process...
+Waiting over for the11 sh running.
+last line is :TRA measure: 0.685142
+TRA measure: 0.685142
+TRAMeasure,Fluo-C2DL-MSC,02,3,TRAMeasure,Fluo-C2DL-MSC,02,3,All sh run finished. Save Result
+Save Result done
+All Done. Enjoy.
+Please Enter 1 (cmd) or 2 (windows) mode) 
+Cmd Mode, Run by Default Parameters
+fileNamePreProcessed
+[Fluo-C2DL-Huh7, Fluo-C2DL-MSC]
+Directory C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\2022-07-26-20-52-logdir has been created.mkdir : [Ljava.lang.String;@17550481 is done
+Waiting over for the copy Parameter.
+Creating Process...
+Waiting over for the0 sh running.
+last line is :i3d::IOException: I3D::ImageReader: file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' not found or cannot be read.
+last line is :The image 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' cannot be opened!
+The image 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' cannot be opened!
+DETMeasure,Fluo-C2DL-Huh7,01,3,Creating Process...
+Waiting over for the1 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+DETMeasure,Fluo-C2DL-Huh7,02,3,Creating Process...
+Waiting over for the2 sh running.
+last line is :i3d::IOException: I3D::ImageReader: file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' not found or cannot be read.
+last line is :The image 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' cannot be opened!
+The image 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' cannot be opened!
+SEGMeasure,Fluo-C2DL-Huh7,01,3,Creating Process...
+Waiting over for the3 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+SEGMeasure,Fluo-C2DL-Huh7,02,3,Creating Process...
+Waiting over for the4 sh running.
+last line is :The track file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/res_track.txt' cannot be opened!
+The track file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/res_track.txt' cannot be opened!
+TRAMeasure,Fluo-C2DL-Huh7,01,3,Creating Process...
+Waiting over for the5 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+TRAMeasure,Fluo-C2DL-Huh7,02,3,mkdir : [Ljava.lang.String;@1324409e is done
+Waiting over for the copy Parameter.
+Creating Process...
+Waiting over for the6 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+DETMeasure,Fluo-C2DL-MSC,01,3,Creating Process...
+Waiting over for the7 sh running.
+last line is :DET measure: 0.693085
+DET measure: 0.693085
+DETMeasure,Fluo-C2DL-MSC,02,3,DETMeasure,Fluo-C2DL-MSC,02,3,Creating Process...
+Waiting over for the8 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+SEGMeasure,Fluo-C2DL-MSC,01,3,Creating Process...
+Waiting over for the9 sh running.
+last line is :SEG measure: 0.660173
+SEG measure: 0.660173
+SEGMeasure,Fluo-C2DL-MSC,02,3,SEGMeasure,Fluo-C2DL-MSC,02,3,Creating Process...
+Waiting over for the10 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+TRAMeasure,Fluo-C2DL-MSC,01,3,Creating Process...
+Waiting over for the11 sh running.
+last line is :TRA measure: 0.685142
+TRA measure: 0.685142
+TRAMeasure,Fluo-C2DL-MSC,02,3,TRAMeasure,Fluo-C2DL-MSC,02,3,All sh run finished. Save Result
+Save Result done
+All Done. Enjoy.
+Please Enter 1 (cmd) or 2 (windows) mode) 
+Cmd Mode, Run by Default Parameters
+fileNamePreProcessed
+[Fluo-C2DL-Huh7, Fluo-C2DL-MSC]
+Directory C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\2022-07-26-20-52-logdir has already been created.mkdir : [Ljava.lang.String;@17550481 is done
+Waiting over for the copy Parameter.
+Creating Process...
+Waiting over for the0 sh running.
+last line is :i3d::IOException: I3D::ImageReader: file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' not found or cannot be read.
+last line is :The image 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' cannot be opened!
+last line is :i3d::IOException: I3D::ImageReader: file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' not found or cannot be read.
+last line is :The image 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' cannot be opened!
+The image 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' cannot be opened!
+DETMeasure,Fluo-C2DL-Huh7,01,3,Creating Process...
+Waiting over for the1 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+DETMeasure,Fluo-C2DL-Huh7,02,3,Creating Process...
+Waiting over for the2 sh running.
+last line is :i3d::IOException: I3D::ImageReader: file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' not found or cannot be read.
+last line is :The image 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' cannot be opened!
+last line is :i3d::IOException: I3D::ImageReader: file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' not found or cannot be read.
+last line is :The image 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' cannot be opened!
+The image 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' cannot be opened!
+SEGMeasure,Fluo-C2DL-Huh7,01,3,Creating Process...
+Waiting over for the3 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+SEGMeasure,Fluo-C2DL-Huh7,02,3,Creating Process...
+Waiting over for the4 sh running.
+last line is :The track file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/res_track.txt' cannot be opened!
+last line is :The track file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/res_track.txt' cannot be opened!
+The track file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/res_track.txt' cannot be opened!
+TRAMeasure,Fluo-C2DL-Huh7,01,3,Creating Process...
+Waiting over for the5 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+TRAMeasure,Fluo-C2DL-Huh7,02,3,mkdir : [Ljava.lang.String;@1324409e is done
+Waiting over for the copy Parameter.
+Creating Process...
+Waiting over for the6 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+DETMeasure,Fluo-C2DL-MSC,01,3,Creating Process...
+Waiting over for the7 sh running.
+last line is :DET measure: 0.693085
+last line is :DET measure: 0.693085
+DET measure: 0.693085
+DETMeasure,Fluo-C2DL-MSC,02,3,DETMeasure,Fluo-C2DL-MSC,02,3,Creating Process...
+Waiting over for the8 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+SEGMeasure,Fluo-C2DL-MSC,01,3,Creating Process...
+Waiting over for the9 sh running.
+last line is :SEG measure: 0.660173
+last line is :SEG measure: 0.660173
+SEG measure: 0.660173
+SEGMeasure,Fluo-C2DL-MSC,02,3,SEGMeasure,Fluo-C2DL-MSC,02,3,Creating Process...
+Waiting over for the10 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+TRAMeasure,Fluo-C2DL-MSC,01,3,Creating Process...
+Waiting over for the11 sh running.
+last line is :TRA measure: 0.685142
+last line is :TRA measure: 0.685142
+TRA measure: 0.685142
+TRAMeasure,Fluo-C2DL-MSC,02,3,TRAMeasure,Fluo-C2DL-MSC,02,3,All sh run finished. Save Result
+Save Result done
+All Done. Enjoy.
+Please Enter 1 (cmd) or 2 (windows) mode) 
+Cmd Mode, Run by Default Parameters
+fileNamePreProcessed
+[Fluo-C2DL-Huh7, Fluo-C2DL-MSC]
+Directory C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\2022-07-26-20-52-logdir has already been created.mkdir : [Ljava.lang.String;@17550481 is done
+Waiting over for the copy Parameter.
+Creating Process...
+Waiting over for the0 sh running.
+last line is :i3d::IOException: I3D::ImageReader: file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' not found or cannot be read.
+last line is :The image 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' cannot be opened!
+last line is :i3d::IOException: I3D::ImageReader: file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' not found or cannot be read.
+last line is :The image 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' cannot be opened!
+last line is :i3d::IOException: I3D::ImageReader: file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' not found or cannot be read.
+last line is :The image 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' cannot be opened!
+The image 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' cannot be opened!
+DETMeasure,Fluo-C2DL-Huh7,01,3,Creating Process...
+Waiting over for the1 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+DETMeasure,Fluo-C2DL-Huh7,02,3,Creating Process...
+Waiting over for the2 sh running.
+last line is :i3d::IOException: I3D::ImageReader: file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' not found or cannot be read.
+last line is :The image 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' cannot be opened!
+last line is :i3d::IOException: I3D::ImageReader: file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' not found or cannot be read.
+last line is :The image 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' cannot be opened!
+last line is :i3d::IOException: I3D::ImageReader: file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' not found or cannot be read.
+last line is :The image 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' cannot be opened!
+The image 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/mask000.tif' cannot be opened!
+SEGMeasure,Fluo-C2DL-Huh7,01,3,Creating Process...
+Waiting over for the3 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+SEGMeasure,Fluo-C2DL-Huh7,02,3,Creating Process...
+Waiting over for the4 sh running.
+last line is :The track file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/res_track.txt' cannot be opened!
+last line is :The track file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/res_track.txt' cannot be opened!
+last line is :The track file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/res_track.txt' cannot be opened!
+The track file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/01_RES/res_track.txt' cannot be opened!
+TRAMeasure,Fluo-C2DL-Huh7,01,3,Creating Process...
+Waiting over for the5 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-Huh7/02_RES/' does not exist!
+TRAMeasure,Fluo-C2DL-Huh7,02,3,mkdir : [Ljava.lang.String;@1324409e is done
+Waiting over for the copy Parameter.
+Creating Process...
+Waiting over for the6 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+DETMeasure,Fluo-C2DL-MSC,01,3,Creating Process...
+Waiting over for the7 sh running.
+last line is :DET measure: 0.693085
+last line is :DET measure: 0.693085
+last line is :DET measure: 0.693085
+DET measure: 0.693085
+DETMeasure,Fluo-C2DL-MSC,02,3,DETMeasure,Fluo-C2DL-MSC,02,3,Creating Process...
+Waiting over for the8 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+SEGMeasure,Fluo-C2DL-MSC,01,3,Creating Process...
+Waiting over for the9 sh running.
+last line is :SEG measure: 0.660173
+last line is :SEG measure: 0.660173
+last line is :SEG measure: 0.660173
+SEG measure: 0.660173
+SEGMeasure,Fluo-C2DL-MSC,02,3,SEGMeasure,Fluo-C2DL-MSC,02,3,Creating Process...
+Waiting over for the10 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+TRAMeasure,Fluo-C2DL-MSC,01,3,Creating Process...
+Waiting over for the11 sh running.
+last line is :TRA measure: 0.685142
+last line is :TRA measure: 0.685142
+last line is :TRA measure: 0.685142
+TRA measure: 0.685142
+TRAMeasure,Fluo-C2DL-MSC,02,3,TRAMeasure,Fluo-C2DL-MSC,02,3,All sh run finished. Save Result
+Save Result done
+All Done. Enjoy.
+Please Enter 1 (cmd) or 2 (windows) mode) 
+Cmd Mode, Run by Default Parameters
+fileNamePreProcessed
+[Fluo-C2DL-MSC]
+Directory C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\2022-07-26-20-56-logdir has been created.mkdir : [Ljava.lang.String;@17550481 is done
+Waiting over for the copy Parameter.
+Creating Process...
+Waiting over for the0 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+DETMeasure,Fluo-C2DL-MSC,01,3,Creating Process...
+Waiting over for the1 sh running.
+last line is :i3d::IOException: I3D::ImageReader: file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/02_RES/mask000.tif' not found or cannot be read.
+last line is :The image 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/02_RES/mask000.tif' cannot be opened!
+The image 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/02_RES/mask000.tif' cannot be opened!
+DETMeasure,Fluo-C2DL-MSC,02,3,Creating Process...
+Waiting over for the2 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+SEGMeasure,Fluo-C2DL-MSC,01,3,Creating Process...
+Waiting over for the3 sh running.
+last line is :i3d::IOException: I3D::ImageReader: file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/02_RES/mask000.tif' not found or cannot be read.
+last line is :The image 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/02_RES/mask000.tif' cannot be opened!
+The image 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/02_RES/mask000.tif' cannot be opened!
+SEGMeasure,Fluo-C2DL-MSC,02,3,Creating Process...
+Waiting over for the4 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+TRAMeasure,Fluo-C2DL-MSC,01,3,Creating Process...
+Waiting over for the5 sh running.
+last line is :The track file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/02_RES/res_track.txt' cannot be opened!
+The track file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/02_RES/res_track.txt' cannot be opened!
+TRAMeasure,Fluo-C2DL-MSC,02,3,All sh run finished. Save Result
+Save Result done
+All Done. Enjoy.
+Please Enter 1 (cmd) or 2 (windows) mode) 
+Cmd Mode, Run by Default Parameters
+fileNamePreProcessed
+[Fluo-C2DL-MSC]
+Directory C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\2022-07-26-20-57-logdir has been created.mkdir : [Ljava.lang.String;@17550481 is done
+Waiting over for the copy Parameter.
+Creating Process...
+Waiting over for the0 sh running.
+Please Enter 1 (cmd) or 2 (windows) mode) 
+Cmd Mode, Run by Default Parameters
+fileNamePreProcessed
+[Fluo-C2DL-MSC]
+Directory C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\2022-07-26-20-58-logdir has been created.mkdir : [Ljava.lang.String;@17550481 is done
+Waiting over for the copy Parameter.
+Creating Process...
+Waiting over for the0 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+DETMeasure,Fluo-C2DL-MSC,01,3,Creating Process...
+Waiting over for the1 sh running.
+last line is :i3d::IOException: I3D::ImageReader: file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/02_RES/mask000.tif' not found or cannot be read.
+last line is :The image 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/02_RES/mask000.tif' cannot be opened!
+The image 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/02_RES/mask000.tif' cannot be opened!
+DETMeasure,Fluo-C2DL-MSC,02,3,Creating Process...
+Waiting over for the2 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+SEGMeasure,Fluo-C2DL-MSC,01,3,Creating Process...
+Waiting over for the3 sh running.
+last line is :i3d::IOException: I3D::ImageReader: file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/02_RES/mask000.tif' not found or cannot be read.
+last line is :The image 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/02_RES/mask000.tif' cannot be opened!
+The image 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/02_RES/mask000.tif' cannot be opened!
+SEGMeasure,Fluo-C2DL-MSC,02,3,Creating Process...
+Waiting over for the4 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+TRAMeasure,Fluo-C2DL-MSC,01,3,Creating Process...
+Waiting over for the5 sh running.
+Please Enter 1 (cmd) or 2 (windows) mode) 
+Cmd Mode, Run by Default Parameters
+fileNamePreProcessed
+[Fluo-C2DL-MSC]
+Directory C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\2022-07-26-21-00-logdir has been created.mkdir : [Ljava.lang.String;@17550481 is done
+Waiting over for the copy Parameter.
+Creating Process...
+Waiting over for the0 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+DETMeasure,Fluo-C2DL-MSC,01,3,Creating Process...
+Waiting over for the1 sh running.
+last line is :DET measure: 0.693085
+DET measure: 0.693085
+DETMeasure,Fluo-C2DL-MSC,02,3,DETMeasure,Fluo-C2DL-MSC,02,3,Creating Process...
+Waiting over for the2 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+SEGMeasure,Fluo-C2DL-MSC,01,3,Creating Process...
+Waiting over for the3 sh running.
+last line is :SEG measure: 0.660173
+SEG measure: 0.660173
+SEGMeasure,Fluo-C2DL-MSC,02,3,SEGMeasure,Fluo-C2DL-MSC,02,3,Creating Process...
+Waiting over for the4 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+TRAMeasure,Fluo-C2DL-MSC,01,3,Creating Process...
+Waiting over for the5 sh running.
+last line is :TRA measure: 0.685142
+TRA measure: 0.685142
+TRAMeasure,Fluo-C2DL-MSC,02,3,TRAMeasure,Fluo-C2DL-MSC,02,3,All sh run finished. Save Result
+Save Result done
+All Done. Enjoy.
+Please Enter 1 (cmd) or 2 (windows) mode) 
+Cmd Mode, Run by Default Parameters
+fileNamePreProcessed
+[Fluo-C2DL-MSC]
+Directory C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\2022-07-26-21-00-logdir has already been created.mkdir : [Ljava.lang.String;@17550481 is done
+Waiting over for the copy Parameter.
+Creating Process...
+Waiting over for the0 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+DETMeasure,Fluo-C2DL-MSC,01,3,Creating Process...
+Waiting over for the1 sh running.
+last line is :DET measure: 0.693085
+last line is :i3d::IOException: I3D::ImageReader: file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/02_RES/mask000.tif' not found or cannot be read.
+last line is :The image 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/02_RES/mask000.tif' cannot be opened!
+The image 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/02_RES/mask000.tif' cannot be opened!
+DETMeasure,Fluo-C2DL-MSC,02,3,Creating Process...
+Waiting over for the2 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+SEGMeasure,Fluo-C2DL-MSC,01,3,Creating Process...
+Waiting over for the3 sh running.
+last line is :SEG measure: 0.660173
+last line is :i3d::IOException: I3D::ImageReader: file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/02_RES/mask000.tif' not found or cannot be read.
+last line is :The image 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/02_RES/mask000.tif' cannot be opened!
+The image 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/02_RES/mask000.tif' cannot be opened!
+SEGMeasure,Fluo-C2DL-MSC,02,3,Creating Process...
+Waiting over for the4 sh running.
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+last line is :The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+The directory 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+TRAMeasure,Fluo-C2DL-MSC,01,3,Creating Process...
+Waiting over for the5 sh running.
+last line is :TRA measure: 0.685142
+last line is :The track file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/02_RES/res_track.txt' cannot be opened!
+The track file 'C:\Users\jzhao\Documents\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/02_RES/res_track.txt' cannot be opened!
+TRAMeasure,Fluo-C2DL-MSC,02,3,All sh run finished. Save Result
+Save Result done
+All Done. Enjoy.

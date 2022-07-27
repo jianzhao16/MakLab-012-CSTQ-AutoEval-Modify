@@ -11,7 +11,7 @@ import java.util.Arrays;
 import java.util.Date;
 import java.util.Scanner;
 
-public class EvalMainFrmV3 {
+public class EvalMainFrmV3auto {
     // Global datasetNames List
     //public static ArrayList<String> datasetNamesList=new ArrayList<String>();
 
@@ -24,7 +24,8 @@ public class EvalMainFrmV3 {
 	    		myInput = new Scanner(System.in);
 	    	    System.out.println("Please Enter 1 (cmd) or 2 (windows) mode) ");
 	    	    // String input
-	    	    String mode = myInput.nextLine();
+	    	    // Run by the default Parameters
+	    	    String mode = "1";
 	
 	    	    switch(mode) {
 		    	    case "1":
