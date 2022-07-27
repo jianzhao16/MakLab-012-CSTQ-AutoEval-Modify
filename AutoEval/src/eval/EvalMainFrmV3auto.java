@@ -39,7 +39,7 @@ public class EvalMainFrmV3auto {
 			    	    	//  C:\Users\jacks\Documents\temp\WinEval   	    	
 			    	    	//  C:\Users\jacks\Documents\New\0627
 		                	
-		                	runEvalCmd("C:\\Users\\jzhao\\Documents\\GitHub\\MakLab-012-CSTQ-AutoEval-Modify\\AutoEval\\src\\eval\\WinEval","C:\\Users\\jzhao\\Documents\\code\\1data-lab\\CSTQ\\2Modify");
+		                	runEvalCmd("C:\\Users\\jzhao\\Documents\\GitHub\\MakLab-012-CSTQ-AutoEval-Modify\\AutoEval\\src\\eval\\WinEval","D:\\code\\1data-lab\\CSTQ\\2Modify");
 		                }
 		                else if(EvalUtil.isMac())
 		                {
