@@ -2891,3 +2891,36 @@ TRA measure: 0.642292
 TRAMeasure,Fluo-C2DL-MSC,02,3,TRAMeasure,Fluo-C2DL-MSC,02,3,All sh run finished. Save Result
 Save Result done
 All Done. Enjoy.
+Please Enter 1 (cmd) or 2 (windows) mode) 
+Cmd Mode, Run by Default Parameters
+fileNamePreProcessed
+[Fluo-C2DL-MSC]
+Directory D:\code\1data-lab\CSTQ\2Modify\2022-07-29-14-32-logdir has been created.mkdir : [Ljava.lang.String;@17550481 is done
+Waiting over for the copy Parameter.
+Creating Process...
+Waiting over for the0 sh running.
+last line is :The directory 'D:\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+The directory 'D:\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+DETMeasure,Fluo-C2DL-MSC,01,3,Creating Process...
+Waiting over for the1 sh running.
+last line is :DET measure: 0.693085
+DET measure: 0.693085
+DETMeasure,Fluo-C2DL-MSC,02,3,DETMeasure,Fluo-C2DL-MSC,02,3,Creating Process...
+Waiting over for the2 sh running.
+last line is :The directory 'D:\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+The directory 'D:\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+SEGMeasure,Fluo-C2DL-MSC,01,3,Creating Process...
+Waiting over for the3 sh running.
+last line is :SEG measure: 0.660173
+SEG measure: 0.660173
+SEGMeasure,Fluo-C2DL-MSC,02,3,SEGMeasure,Fluo-C2DL-MSC,02,3,Creating Process...
+Waiting over for the4 sh running.
+last line is :The directory 'D:\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+The directory 'D:\code\1data-lab\CSTQ\2Modify\Fluo-C2DL-MSC/01_RES/' does not exist!
+TRAMeasure,Fluo-C2DL-MSC,01,3,Creating Process...
+Waiting over for the5 sh running.
+last line is :TRA measure: 0.685142
+TRA measure: 0.685142
+TRAMeasure,Fluo-C2DL-MSC,02,3,TRAMeasure,Fluo-C2DL-MSC,02,3,All sh run finished. Save Result
+Save Result done
+All Done. Enjoy.
