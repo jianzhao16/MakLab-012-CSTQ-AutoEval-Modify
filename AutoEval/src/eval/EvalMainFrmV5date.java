@@ -28,10 +28,10 @@ public class EvalMainFrmV5date {
 				System.out.println("Please Enter 1 (cmd) or 2 (windows) mode) ");
 				// String input
 				// Run by the default Parameters
-				String mode = "1";
+				int mode = 1;
 
 				switch (mode) {
-				case "1":
+				case 1:
 					// Cmd Mode
 					System.out.println("Cmd Mode, Run by Default Parameters");
 					myInput = new Scanner(System.in);
@@ -59,12 +59,12 @@ public class EvalMainFrmV5date {
 
 					errorSign = 0;
 					break;
-				case "2":
+				case 2:
 					System.out.println("Cmd Mode, Please Input Eval Soft and  Data Directory");
 					runEvalCmd(myInput.nextLine().trim(), myInput.nextLine().trim());
 					errorSign = 0;
 					break;
-				case "3":
+				case 3:
 					// Windows Mode
 					System.out.println("Windows Mode:");
 					createWindow();
@@ -200,7 +200,7 @@ public class EvalMainFrmV5date {
 	 */
 	private static ArrayList<String> fileNamePreProcessed(File file) {
 
-		ArrayList<String> datasetNamesList = new ArrayList<String>();
+		ArrayList<String> datasetNamesList = new ArrayList<>();
 		file.list();
 
 		System.out.println("fileNamePreProcessed");
