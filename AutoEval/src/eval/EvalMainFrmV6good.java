@@ -14,7 +14,7 @@ import java.util.Arrays;
 import java.util.Date;
 import java.util.Scanner;
 
-public class EvalMainFrmV5date {
+public class EvalMainFrmV6good {
 	// Global datasetNames List
 	// public static ArrayList<String> datasetNamesList=new ArrayList<String>();
 
